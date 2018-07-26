@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+html,body,main {
+    height: 100%;
+}
+
+body {
+    font: 14px/1.5 Arial;
+}
+
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
