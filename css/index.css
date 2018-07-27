@@ -60,6 +60,12 @@ main .actions .iconfont {
     text-align: center;
     color: rgba(255,255,255,0.4);
     font-size: 5vh;
+    cursor: pointer;
+}
+
+main .actions .iconfont:hover {
+    color: rgba(255,255,255,0.8);
+    font-size: 6vh;
 }
 
 main .detail {
@@ -108,6 +114,7 @@ main .area-bar .bar-progress {
     height: 100%;
     border-radius: 0.2vh;
     background-color: #fff;
+    transition: width 0.8s;
 }
 
 main .area-bar .current-time {
@@ -131,6 +138,7 @@ footer {
     height: 24vh;
     background: rgba(255,255,255,0.2);
     box-shadow: 0 -0.25vh 0.25vh 0.25vh rgba(255,255,255,0.2);
+    color: #fff;
 }
 
 footer div.layout {
@@ -145,6 +153,10 @@ footer .iconfont {
     opacity: 0;
     transition: all 0.4s;
     cursor: pointer;
+}
+
+footer .iconfont:hover{
+    color: rgba(255,255,255,0.8);
 }
 
 footer .icon-left {
@@ -168,7 +180,6 @@ footer .box {
 footer .box .clearfix {
     position: absolute;
     left: 0;
-    width: 2000px;
 }
 
 footer .box li {
@@ -180,11 +191,23 @@ footer .box li {
     cursor: pointer;
 }
 
+.active {
+    box-shadow: 0 0 .5vh .5vh rgba(255,255,255,0.8);
+}
+
 footer li .cover {
     height: 16vh;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+footer li h3 {
+    margin-top: 1vh;
+}
+
+footer li:hover {
+    box-shadow: 0 0 .5vh .5vh rgba(255,255,255,0.8);
 }
 
 .bg {
@@ -210,4 +233,9 @@ footer li .cover {
 
 #page-cover {
     display: none;
+}
+
+.boomText {
+    display: inline-block;
+    opacity: 0;
 }
